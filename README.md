@@ -23,7 +23,7 @@ __📷 Photos:__
 
 # Use
 
-⌨ python3 Wash-DoS.py [ip] [port] [time] [method]
+⌨ __python3 Wash-DoS.py [ip] [port] [time] [method]__
 
 ****
 # INFO
