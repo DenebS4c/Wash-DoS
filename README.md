@@ -2,7 +2,7 @@
 
 __📷 Photos:__
 
-![image](https://user-images.githubusercontent.com/79161850/119704984-42949300-be26-11eb-8e8c-f232400ade0a.png)
+![image](https://user-images.githubusercontent.com/79161850/119705446-c0f13500-be26-11eb-89fd-cf385a668714.png)
 
 ****
 
